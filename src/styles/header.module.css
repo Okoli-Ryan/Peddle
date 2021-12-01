@@ -1,0 +1,140 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.header .logo {
+    width: 8rem;
+}
+
+.header .menu {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header .sign_up__container, .menu__container {
+    display: none;
+}
+
+.sign_up__container{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.header button {
+    border: none;
+    border-radius: 30px;
+    background-color: #333;
+    padding: .8rem .8rem;
+    color: #fff;
+}
+
+.sideBar {
+    display: none;
+}
+
+@media (max-width: 662px){
+
+    .header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .menu__container, .header .sign_up__container {
+        display: flex;
+        width: 33.33%
+    }
+
+    .sideBar {
+        display: flex;
+        background-color: #fff;
+        flex-direction: column;
+        min-height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        position: fixed;
+        z-index: 2;
+        transition: left .5s ease-in-out;
+    }
+
+    .cancel_container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+
+    .cancel_container img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+
+    .sideBar_heading {
+        padding: 1rem;
+        background-color: #84D3F2;
+    }
+
+    .sideBar_heading span {
+        color: #fff;
+    }
+
+    .get_started__container > button {
+        background-color: #333;
+        border: none;
+        color: #fff;
+        width: 100%;
+        padding: .8rem 1rem;
+        border-radius: 30px;
+        max-width: 30rem;
+        margin-top: 2rem;
+    }
+    
+    .get_started__container {
+        display: flex;
+        justify-content: center;
+        margin: auto auto 2rem auto;
+        padding: 0 1rem;
+        width: 100%; 
+    }
+
+    .social_media__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button__text{
+    transition: color .3s ease-in-out;
+}
+
+.button:hover .button__text{
+    color: #f28544;
+}
+
+.button__icon_container img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .8rem;
+}
+
+.button__text {
+    font-size: 1rem;
+    color: #333;
+}
+
+}
