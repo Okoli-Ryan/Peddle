@@ -14,7 +14,7 @@ export default function Navbar() {
     <>
       <aside
         className={styles.sideBar}
-        style={showMenu ? { left: 0 } : { left: "-100%" }}>
+        style={showMenu ? { left: 0 } : { left: "-70%" }}>
         <div className={styles.cancel_container}>
           <img onClick={() => setShowMenu(false)} src={Cancel} alt="" />
         </div>
@@ -61,9 +61,7 @@ export default function Navbar() {
           />
         </div>
         <img src={PeddleLogo} alt="" className={styles.logo} />
-        <div className={styles.sign_up__container}>
-          <button>Sign Up</button>
-        </div>
+        <div className={styles.sign_up__container}></div>
       </header>
     </>
   );

@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .used_arrow {
@@ -78,22 +79,25 @@
 }
 
 .used_arrow .used_items {
-    width: 60%;
+    width: 60vw;
     max-width: 30rem;
+    border-radius: 10px
 }
 
 .used_arrow .arrow {
     width: 20%;
     top: -2rem;
+    left: -5%;
     position: relative;
 }
 
 .money {
-    width: 60%;
+    width: 60vw;
     max-width: 30rem;
     top: -2rem;
     left: 5%;
     position: relative;
+    border-radius: 10px
 }
 
 .uses{
@@ -159,6 +163,21 @@ height: 100%;
 .uses__image_container img {
     width: 70%;
     height: 70%;
+}
+
+.start_buying {
+    font-size: 16px;
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    width: max-content;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+
 }
 
 .alert_section {
@@ -256,6 +275,10 @@ height: 100%;
 
 @media only screen and (max-width: 662px){
 
+    .start_buying {
+        font-size: 14px;
+    }
+
     .nav {
         display: none;
     }
@@ -270,13 +293,19 @@ height: 100%;
         width: 33.33%
     }
 
+    .section__text_container {
+        padding-top: 12px;
+        background-color: #333;
+    }
+
     .get_cash {
         width: calc(100% - 2rem);
         font-size: 2.5rem;
     }
 
     .section__text_container p {
-        font-size: 1.2rem;
+        font-size: 9.5px;
+        line-height: 11.65px;
     }
 
     .uses {
@@ -284,60 +313,79 @@ height: 100%;
     }
 
     .use{
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 3rem 0;
     }
 
     .uses__text_container {
         width: 100%;
+        text-align: left;
+        padding-bottom: 1rem;
     }
 
     .uses__text_container h3 {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
     .uses__text_container p {
         font-size: 1rem;
-        text-align: center;
     }
 
     .use .uses__image_container {
         width: 100%;
+        padding: 0;
+        /* justify-self: center; */
         justify-content: center;
     }
 
+    .use .uses__image_container img {
+        width: 60%;
+    }
+
     .uses .email_section {
-        width: 100%;
+        /* width: 100%; */
         width: calc(100% - 2rem);
+        margin-bottom: 0;
     }
 
     .email_section input {
-        font-size: .8rem;
+        font-size: .6rem;
     }
     .email_section button {
-        padding: 1rem .5rem;
+        padding: .8rem .5rem;
         font-size: .8rem;
+    }
+
+    .alert_section{
+        margin: 0
     }
 
     .alert_container {
-        align-items: center;
+        /* align-items: center; */
+        padding: 1rem 1rem 2rem 1rem;
     }
 
     .alert_container img {
-        height: 7rem;
-        top: -2rem;
+        height: calc(100% + 3rem);
+        top: -1rem;
+    }
+    .alert_container button {
+        border-radius: 10px;
     }
 
     .alert_container h3 {
-        width: 100%;
-        color: #f28544;
-        text-align: center;
+        /* width: 100%; */
+        max-width: 70%;
+        font-size: 16px;
+        /* text-align: center; */
     }
 
     .alert_container p {
-        width: 100%;
-        text-align: center;
+        /* width: 100%; */
+        /* text-align: center; */
+        font-size: 9.5px;
+        line-height: 11.65px;
     }
 
     .uses__image_container img {

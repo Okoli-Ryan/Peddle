@@ -86,7 +86,7 @@ export default function Home() {
           <div className={`${styles.use} ${styles.reverse}`}>
             <div className={styles.uses__text_container}>
               <h3>
-                Meet <span>Specific</span> needs
+                Money back <span>guarantee</span>
               </h3>
               <p>
                 This is a no-scam zone! You can be sure your money is going to
@@ -94,6 +94,7 @@ export default function Home() {
                 secure. On Peddle, payments are only sent to the seller after
                 quality confirmation from buyers.
               </p>
+              <button className={styles.start_buying}>Start buying</button>
             </div>
             <div className={styles.uses__image_container}>
               <img src={MoneyBack} alt="" />
@@ -145,11 +146,11 @@ export default function Home() {
                 needs right to your home
               </p>
             </div>
-            <div className={styles.uses__image_container}>
+            {/* <div className={styles.uses__image_container}>
               <img src={Radar} alt="" />
-            </div>
+            </div> */}
           </div>
-          <button>Get Started</button>
+          <button style={{ marginTop: "-2.5rem" }}>Get Started</button>
         </section>
       </main>
     </>
