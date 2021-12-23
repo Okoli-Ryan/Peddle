@@ -42,7 +42,7 @@
     width: 50%;
     text-align: center;
     font-size: 3rem;
-    font-weight: 800
+    font-weight: 700
 }
 
 .section__text_container {
@@ -275,6 +275,14 @@ height: 100%;
 
 @media only screen and (max-width: 662px){
 
+    .woman_svg {
+        transform: rotateY(180deg) translateX(-20%);
+    }
+
+    .radar_image {
+        display: none;
+    }
+
     .start_buying {
         font-size: 14px;
     }
@@ -340,7 +348,7 @@ height: 100%;
     }
 
     .use .uses__image_container img {
-        width: 60%;
+        width: 55%;
     }
 
     .uses .email_section {

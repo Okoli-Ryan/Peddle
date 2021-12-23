@@ -80,7 +80,7 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.uses__image_container}>
-              <img src={MeetNeeds} alt="" />
+              <img className={styles.woman_svg} src={MeetNeeds} alt="" />
             </div>
           </div>
           <div className={`${styles.use} ${styles.reverse}`}>
@@ -94,7 +94,7 @@ export default function Home() {
                 secure. On Peddle, payments are only sent to the seller after
                 quality confirmation from buyers.
               </p>
-              <button className={styles.start_buying}>Start buying</button>
+              <button className={styles.start_buying}>START BUYING</button>
             </div>
             <div className={styles.uses__image_container}>
               <img src={MoneyBack} alt="" />
@@ -109,7 +109,7 @@ export default function Home() {
                 you can get that screwdriver that Shoprite doesn’t have in time
                 to fix your microwave! <span>Whoop whoop</span>
               </p>
-              <button>Start Requesting</button>
+              <button>START REQUESTING</button>
               <img src={Exclamation} alt="" />
             </div>
           </div>
@@ -146,11 +146,14 @@ export default function Home() {
                 needs right to your home
               </p>
             </div>
-            {/* <div className={styles.uses__image_container}>
+            <div
+              className={[
+                `${styles.uses__image_container} ${styles.radar_image}`,
+              ]}>
               <img src={Radar} alt="" />
-            </div> */}
+            </div>
           </div>
-          <button style={{ marginTop: "-2.5rem" }}>Get Started</button>
+          <button style={{ marginTop: "-2.5rem" }}>GET STARTED</button>
         </section>
       </main>
     </>

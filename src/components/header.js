@@ -12,9 +12,14 @@ export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
+      <div
+        style={
+          showMenu ? { opacity: 1, left: 0 } : { opacity: 0, left: "-100%" }
+        }
+        className={styles.sideBar_overlay}></div>
       <aside
         className={styles.sideBar}
-        style={showMenu ? { left: 0 } : { left: "-70%" }}>
+        style={showMenu ? { left: 0 } : { left: "-100%" }}>
         <div className={styles.cancel_container}>
           <img onClick={() => setShowMenu(false)} src={Cancel} alt="" />
         </div>

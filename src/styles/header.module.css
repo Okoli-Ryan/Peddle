@@ -47,18 +47,30 @@
         display: flex;
         width: 33.33%
     }
+    
+    .sideBar_overlay {
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        overflow-y: hidden;
+        z-index: 3;
+        transition: opacity .3s .3s ease-in-out;
+    }
 
     .sideBar {
         display: flex;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 4;
+        overflow-y: scroll;
         background-color: #fff;
         flex-direction: column;
         min-height: 100%;
         width: 70%;
-        top: 0;
-        bottom: 0;
-        overflow-y: scroll;
-        position: fixed;
-        z-index: 2;
         transition: left .5s ease-in-out;
     }
 
