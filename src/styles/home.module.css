@@ -42,7 +42,8 @@
     width: 50%;
     text-align: center;
     font-size: 3rem;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .section__text_container {
@@ -127,6 +128,7 @@
 
 .uses__text_container h3{
     font-size: 3rem;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .uses__text_container h3 span, .uses__text_container p span{
@@ -198,6 +200,7 @@ height: 100%;
 
 .alert_container h3 {
     font-size: 2rem;
+    font-family: 'Gothic A1', sans-serif;
     width: 80%;
     color: #fff;
 }
@@ -206,6 +209,7 @@ height: 100%;
     color: #fff;
     margin-top: 1rem;
     width: 70%;
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 200;
 }
 
